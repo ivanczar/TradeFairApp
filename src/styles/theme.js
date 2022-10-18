@@ -25,8 +25,7 @@ const palette = {
     },
     textVariants: {
       header: {
-        fontFamily: 'Raleway',
-        fontSize: 36,
+        fontSize: 40,
         fontWeight: 'bold',
       },
       body: {

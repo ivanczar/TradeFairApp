@@ -18,9 +18,9 @@ export default StyleSheet.create({
   },
   title: {
     color: theme.colors.foreground,
-    fontWeight: 'bold',
-    fontSize: 40,
-    lineHeight: 51,
+    fontWeight: theme.textVariants.header.fontWeight,
+    fontSize: theme.textVariants.header.fontSize,
+    lineHeight: theme.textVariants.header.fontSize,
   },
   inputCont: {
     width: '100%',
@@ -57,7 +57,7 @@ export default StyleSheet.create({
     color: theme.colors.foreground,
   },
   icon: {
-    color: 'white',
+    color: theme.colors.foreground,
     marginRight: 10,
   },
   signupCont: { margin: 10, flexDirection: 'row' },
@@ -65,7 +65,7 @@ export default StyleSheet.create({
     color: theme.colors.foreground,
   },
   signupLink: {
-    fontWeight: 'bold',
+    fontWeight: theme.textVariants.header.fontWeight,
     color: theme.colors.foreground,
   },
   divider: {
