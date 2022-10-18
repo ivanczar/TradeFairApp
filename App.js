@@ -6,11 +6,12 @@ import {
   Button
 } from "native-base";
 import LoginScreen from "./src/screens/LoginScreen/LoginScreen";
+import LandingScreen from "./src/screens/LandingScreen/LandingScreen";
 
 export default function App() {
   return (
     <NativeBaseProvider>
-<LoginScreen/>
+<LandingScreen/>
     </NativeBaseProvider>
   );
 }
