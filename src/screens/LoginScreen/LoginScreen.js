@@ -1,15 +1,5 @@
 import React from 'react';
-import {
-  Text,
-  Box,
-  NativeBaseProvider,
-  Button,
-  Flex,
-  Input,
-  Divider,
-  Pressable,
-  Link,
-} from 'native-base';
+import { Text, Button, Flex, Input, Divider, Link } from 'native-base';
 import styles from './LoginScreenStyle';
 
 import Ionicons from 'react-native-vector-icons/Ionicons';
@@ -20,8 +10,16 @@ const LoginScreen = () => {
         <Text style={styles.title}>Trade Fair App</Text>
       </Flex>
       <Flex style={styles.inputCont}>
-        <Input variant={'rounded'} placeholder='Username or email' style={styles.input}></Input>
-        <Input variant={'rounded'} placeholder='Password' style={styles.input}></Input>
+        <Input
+          variant={'rounded'}
+          placeholder='Username or email'
+          style={styles.input}
+        ></Input>
+        <Input
+          variant={'rounded'}
+          placeholder='Password'
+          style={styles.input}
+        ></Input>
       </Flex>
       <Flex style={styles.buttonCont}>
         <Button
