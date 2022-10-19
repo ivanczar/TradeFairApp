@@ -1,25 +1,22 @@
 import React from 'react';
-import {
-  Text,
-  Box,
-  NativeBaseProvider,
-  Button,
-  Flex,
-  Input,
-  Divider,
-  Pressable,
-  Link,
-  Avatar,
-} from 'native-base';
-import { StatusBar } from 'react-native';
+import { Text, Flex, Input, Pressable, Avatar } from 'native-base';
 import Ionicons from 'react-native-vector-icons/Ionicons';
-import { StyleSheet } from 'react-native';
-import { theme } from '../../styles/theme';
+import styles from './ProfileScreenStyle';
+import ProfileInput from './components/ProfileInput';
+
 const ProfileScreen = () => {
+  const imgURL =
+    'https://www.medifab.co.nz/sites/default/files/Frederick%20Mascull_0.png';
   return (
     <Flex>
       <Flex style={styles.topBar}>
-        <Ionicons size={35} color={'white'} name='chevron-back'></Ionicons>
+        <Pressable
+          onPress={() => {
+            console.log('back pressed');
+          }}
+        >
+          <Ionicons size={35} color={'white'} name='chevron-back'></Ionicons>
+        </Pressable>
       </Flex>
       <Flex style={styles.bodyCont}>
         <Flex style={styles.photoCont}>
@@ -27,40 +24,22 @@ const ProfileScreen = () => {
             size='150px'
             style={styles.photo}
             source={{
-              uri: 'https://www.medifab.co.nz/sites/default/files/Frederick%20Mascull_0.png',
+              uri: imgURL,
             }}
           />
           <Text style={styles.nameTitle}>Sam Sung</Text>
         </Flex>
         <Flex style={styles.inputCont}>
-          <Input
-            style={styles.input}
-            placeholder='Email'
-            InputRightElement={
-              <Ionicons size={20} name='create-outline'></Ionicons>
-            }
-          ></Input>
-          <Input
-            style={styles.input}
-            placeholder='Password'
-            InputRightElement={
-              <Ionicons size={20} name='create-outline'></Ionicons>
-            }
-          ></Input>
-          <Input
-            style={styles.input}
-            placeholder='Company'
-            InputRightElement={
-              <Ionicons size={20} name='create-outline'></Ionicons>
-            }
-          ></Input>
-          <Input
-            style={styles.input}
+          <ProfileInput placeholder='Email' value='samsung20@gmail.com' />
+          {''}
+          <ProfileInput placeholder='Password' value='*******' />
+          {''}
+          <ProfileInput placeholder='Company' value='MadeupCompany Inc.' />
+          {''}
+          <ProfileInput
             placeholder='Interests'
-            InputRightElement={
-              <Ionicons size={20} name='create-outline'></Ionicons>
-            }
-          ></Input>
+            value='Bitcoin    Startups      FinTech'
+          />
         </Flex>
       </Flex>
     </Flex>
@@ -68,38 +47,3 @@ const ProfileScreen = () => {
 };
 
 export default ProfileScreen;
-
-const styles = StyleSheet.create({
-  topBar: {
-    backgroundColor: theme.colors.primary,
-    height: 80,
-    width: '100%',
-    alignContent: 'center',
-    justifyContent: 'center',
-    paddingTop: StatusBar.currentHeight,
-  },
-  bodyCont: {
-    height: '100%',
-    alignItems: 'center',
-    backgroundColor: theme.colors.background,
-  },
-  photoCont: {
-    width: '100%',
-    flexDirection: 'column',
-    alignItems: 'center',
-    justifyContent: 'center',
-    flex: 1,
-  },
-  photo: {},
-  nameTitle: {
-    fontSize: 40,
-    lineHeight: 40,
-    fontWeight: theme.textVariants.header.fontWeight,
-    marginTop: 10,
-  },
-  inputCont: {
-    flex: 2,
-    width: '80%',
-  },
-  input: {},
-});
