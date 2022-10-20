@@ -20,8 +20,8 @@ const LoginScreen = () => {
         <Text style={styles.title}>Trade Fair App</Text>
       </Flex>
       <Flex style={styles.inputCont}>
-        <Input variant={'rounded'} placeholder='Username or email' style={styles.input}></Input>
-        <Input variant={'rounded'} placeholder='Password' style={styles.input}></Input>
+        <Input placeholder='Username or email' style={styles.input}></Input>
+        <Input placeholder='Password' style={styles.input}></Input>
       </Flex>
       <Flex style={styles.buttonCont}>
         <Button
