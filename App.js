@@ -1,19 +1,18 @@
-import React from "react";
-import {
-  Text,
-  Box,
-  NativeBaseProvider,
-  Button
-} from "native-base";
-import LoginScreen from "./src/screens/LoginScreen/LoginScreen";
-import LandingScreen from "./src/screens/LandingScreen/LandingScreen";
+
+
+import React from 'react';
+import { NativeBaseProvider } from 'native-base';
+import LoginScreen from './src/screens/LoginScreen/LoginScreen';
+import RegisterScreen from './src/screens/RegisterScreen/RegisterScreen';
+
 
 export default function App() {
   return (
     <NativeBaseProvider>
-<LandingScreen/>
+
+      {/* <LoginScreen/> */}
+      <RegisterScreen />
+
     </NativeBaseProvider>
   );
 }
-
-
