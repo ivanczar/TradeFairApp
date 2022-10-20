@@ -6,7 +6,6 @@ const ProfileInput = (props) => {
   return (
     <Input
       placeholder={props.placeholder}
-      isDisabled={true}
       value={props.value}
       InputRightElement={
         <Pressable

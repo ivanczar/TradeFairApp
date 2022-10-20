@@ -6,7 +6,7 @@ import ProfileInput from './components/ProfileInput';
 
 const ProfileScreen = () => {
   const imgURL =
-    'https://www.medifab.co.nz/sites/default/files/Frederick%20Mascull_0.png';
+    'https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Paul_Circle.png/599px-Paul_Circle.png?20150912170243';
   return (
     <Flex>
       <Flex style={styles.topBar}>
