@@ -16,7 +16,7 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 import { data } from './components/data';
 import styles from './HomeScreenStyle';
 import { ImageBackground } from 'react-native';
-const HomeScreen = () => {
+const HomeScreen = ({navigation}) => {
   return (
     <Box style={styles.cont}>
       <HomeTopBar />
@@ -27,7 +27,7 @@ const HomeScreen = () => {
             <ScrollView style={styles.scrollCont}>
               <Pressable
                 onPress={() => {
-                  console.log('Opening', item.fullName);
+                 navigation.navigate("Landing");
                 }}
               >
                 <Flex style={styles.cardCont}>

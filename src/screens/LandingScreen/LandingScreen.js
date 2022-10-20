@@ -11,7 +11,7 @@ import {
   Link,
 } from 'native-base';
 import styles from './LandingScreenStyle';
-const LandingScreen = () => {
+const LandingScreen = ({navigation}) => {
   return (
     <Flex style={styles.cont}>
       <Flex style={styles.titleCont}>
@@ -20,13 +20,13 @@ const LandingScreen = () => {
       <Flex style={styles.buttonCont}>
         <Button
           style={styles.loginButton}
-          onPress={() => console.log('Login Pressed')}
+          onPress={() => navigation.navigate("Login")}
         >
           <Text>Login</Text>
         </Button>
         <Button
           style={styles.registerButton}
-          onPress={() => console.log('Login Pressed')}
+          onPress={() => navigation.navigate("Register")}
         >
           Register
         </Button>
