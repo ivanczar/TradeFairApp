@@ -13,7 +13,9 @@ export default StyleSheet.create({
   },
   profileIcon: {
     fontSize: theme.textVariants.header.fontSize,
-    paddingLeft: 15,
+    marginLeft: 10,
+    height: 35,
+    width: 35,
     color: 'white',
   },
   title: {
@@ -41,5 +43,6 @@ export default StyleSheet.create({
     maxWidth: 200,
     height: 30,
     backgroundColor: theme.colors.background,
+    
   },
 });

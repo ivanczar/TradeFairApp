@@ -7,17 +7,30 @@ export default StyleSheet.create({
   },
   scrollCont: {
     width: '100%',
-    height: 100,
+    height: 220,
   },
-  eventCont: {
+  cardCont: {
     width: '90%',
     marginLeft: 20,
     borderRadius: 10,
     marginTop: 20,
-    height: 80,
+    height: 200,
     paddingLeft: 0,
     backgroundColor: theme.colors.foreground,
-    paddingVertical: 10,
+    // paddingVertical: 10,
+  },
+  cardImageCont: {
+    width: '100%',
+    height: '100%',
+    justifyContent: 'center',
+    flex: 2,
+  },
+  cardBodyCont: {
+    width: '100%',
+    height: '100%',
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center'
   },
   eventPic: {
     marginLeft: 15,
@@ -26,12 +39,17 @@ export default StyleSheet.create({
     color: 'black',
     fontWeight: theme.textVariants.header.fontWeight,
     fontSize: 20,
+    marginTop: 10,
+    marginLeft: 10,
   },
   dateTitle: {
     color: theme.colors.grey,
+    marginLeft: 10,
   },
   enterIcon: {
     marginTop: 10,
-    fontSize: theme.textVariants.header.fontSize,
+    fontSize: 20,
+    alignSelf: 'flex-end',
+    
   },
 });

@@ -4,7 +4,7 @@ export const data = [
     fullName: 'Wolkswagen Fair',
     fairDate: '12/12/2223',
     avatarUrl:
-      'https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80',
+      'https://wishfulchef.com/wp-content/uploads/2012/04/PadThai.jpg',
   },
   {
     id: '3ac68afc-c605-48d3-a4f8-fbd91aa97f63',
