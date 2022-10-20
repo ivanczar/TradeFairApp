@@ -1,15 +1,5 @@
 import React from 'react';
-import {
-  Text,
-  Box,
-  NativeBaseProvider,
-  Button,
-  Flex,
-  Input,
-  Divider,
-  Pressable,
-  Link,
-} from 'native-base';
+import { Text, Button, Flex, Input, Divider, Link } from 'native-base';
 import styles from './LoginScreenStyle';
 
 import Ionicons from 'react-native-vector-icons/Ionicons';
