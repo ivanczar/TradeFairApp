@@ -5,12 +5,12 @@ import {
   NativeBaseProvider,
   Button
 } from "native-base";
-import LoginScreen from "./src/screens/LoginScreen/LoginScreen";
+import CardholderScreen from "./src/screens/CardholderScreen/CardholderScreen";
 
 export default function App() {
   return (
     <NativeBaseProvider>
-<LoginScreen/>
+<CardholderScreen/>
     </NativeBaseProvider>
   );
 }

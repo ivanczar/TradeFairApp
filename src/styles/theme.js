@@ -10,7 +10,7 @@ const palette = {
   
   export const theme = {
     colors: {
-      background: palette.grey,
+      background: palette.darkGrey,
       foreground: palette.white,
       primary: palette.blue,
       success: palette.green,
