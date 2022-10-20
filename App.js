@@ -1,12 +1,18 @@
 import React from 'react';
-import { Text, Box, NativeBaseProvider, Button } from 'native-base';
-import HomeScreen from './src/screens/HomeScreen/HomeScreen';
+import { NativeBaseProvider } from 'native-base';
+import LoginScreen from './src/screens/LoginScreen/LoginScreen';
+import RegisterScreen from './src/screens/RegisterScreen/RegisterScreen';
+
 
 
 export default function App() {
   return (
     <NativeBaseProvider>
-      <HomeScreen />
+
+
+      {/* <LoginScreen/> */}
+      <RegisterScreen />
+
     </NativeBaseProvider>
   );
 }
