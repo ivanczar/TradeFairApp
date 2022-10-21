@@ -24,14 +24,13 @@ export default StyleSheet.create({
   },
   inputCont: {
     width: '100%',
-
     justifyContent: 'space-around',
-    flex: 1.5,
+    flex: 0.8,
     width: '85%',
   },
   input: {
-    backgroundColor: theme.colors.background,
-    height: 50,
+    backgroundColor: theme.colors.foreground,
+    height: 40,
   },
   buttonCont: {
     width: '100%',
@@ -51,7 +50,7 @@ export default StyleSheet.create({
     alignItems: 'center',
     width: '100%',
     justifyContent: 'center',
-    flex: 0.5,
+    flex: 0.3,
   },
   linkedinText: {
     color: theme.colors.foreground,

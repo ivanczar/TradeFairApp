@@ -29,7 +29,7 @@ export default StyleSheet.create({
   searchInput:{
     maxWidth: 200,
     height: 30,
-    backgroundColor: theme.colors.background,
+    backgroundColor: theme.colors.foreground,
   },
   scrollCont: {
     width: '100%',

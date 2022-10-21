@@ -1,10 +1,11 @@
 import React from 'react';
 import { Input, Pressable } from 'native-base';
 import Ionicons from 'react-native-vector-icons/Ionicons';
-
+import { theme } from '../../../styles/theme';
 const ProfileInput = (props) => {
   return (
     <Input
+    backgroundColor={theme.colors.foreground}
       placeholder={props.placeholder}
       value={props.value}
       InputRightElement={

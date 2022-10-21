@@ -26,12 +26,12 @@ export default StyleSheet.create({
     width: '100%',
     height: 110,
     justifyContent: 'space-around',
-    flex: 1,
+    flex: 0.7,
     width: '85%',
   },
   input: {
-    backgroundColor: theme.colors.background,
-    height: 10,
+    backgroundColor: theme.colors.foreground,
+    height: 40,
   },
   buttonCont: {
     width: '100%',

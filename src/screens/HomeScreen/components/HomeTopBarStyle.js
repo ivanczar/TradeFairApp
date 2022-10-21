@@ -42,6 +42,6 @@ export default StyleSheet.create({
   input: {
     maxWidth: 200,
     height: 30,
-    backgroundColor: theme.colors.background,
+    backgroundColor: theme.colors.foreground,
   },
 });

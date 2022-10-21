@@ -4,12 +4,12 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 import styles from './HomeTopBarStyle';
 const HomeTopBar = ({navigation}) => {
   const imgURL =
-    'https://www.medifab.co.nz/sites/default/files/Frederick%20Mascull_0.png';
+    'https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Paul_Circle.png/599px-Paul_Circle.png?20150912170243';
   return (
     <Flex style={styles.topBar}>
       <Link
         onPress={() => {
-          console.log('avatar pressed');
+          navigation.navigate("Profile");
         }}
       >
         <Avatar

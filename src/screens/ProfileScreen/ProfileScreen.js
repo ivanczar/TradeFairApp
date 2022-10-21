@@ -4,7 +4,7 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 import styles from './ProfileScreenStyle';
 import ProfileInput from './components/ProfileInput';
 
-const ProfileScreen = () => {
+const ProfileScreen = ({navigation}) => {
   const imgURL =
     'https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Paul_Circle.png/599px-Paul_Circle.png?20150912170243';
   return (
@@ -12,7 +12,7 @@ const ProfileScreen = () => {
       <Flex style={styles.topBar}>
         <Pressable
           onPress={() => {
-            console.log('back pressed');
+            navigation.goBack();
           }}
         >
           <Ionicons size={35} color={'white'} name='chevron-back'></Ionicons>

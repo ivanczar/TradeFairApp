@@ -33,6 +33,6 @@ export default StyleSheet.create({
     inputCont: {
       flex: 2,
       width: '80%',
-      backgroundColor: theme.colors.foreground,
+      backgroundColor: theme.colors.background,
     },
   });
