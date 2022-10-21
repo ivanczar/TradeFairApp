@@ -10,7 +10,7 @@ import {
 import styles from './RegisterScreenStyle';
 
 import Ionicons from 'react-native-vector-icons/Ionicons';
-const RegisterScreen = () => {
+const RegisterScreen = ({navigation}) => {
   return (
     <Flex style={styles.cont}>
     <Flex style={styles.titleCont}>
@@ -41,14 +41,14 @@ const RegisterScreen = () => {
     <Flex style={styles.buttonCont}>
       <Button
         style={styles.registerButton}
-        onPress={() => console.log('Register Pressed')}
+        onPress={() => navigation.navigate('Home')}
       >
         Register
       </Button>
     </Flex>
     <Divider style={styles.divider} />
     <Flex style={styles.linkedinCont}>
-      <Link onPress={() => console.log('Linkedin Pressed')}>
+      <Link onPress={() => navigation.navigate('Home')}>
         <Ionicons
           style={styles.icon}
           size={25}
@@ -60,7 +60,7 @@ const RegisterScreen = () => {
     <Divider style={styles.divider} />
     <Flex style={styles.registerCont}>
       <Text style={styles.registerText}>Already have an account?</Text>
-      <Link onPress={() => console.log('Login Pressed')}>
+      <Link onPress={() => navigation.navigate('Login')}>
         <Text style={styles.registerLink}> Login in</Text>
       </Link>
     </Flex>

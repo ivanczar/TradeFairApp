@@ -31,7 +31,7 @@ export default StyleSheet.create({
   },
   input: {
     backgroundColor: theme.colors.background,
-    height: 50,
+    height: 10,
   },
   buttonCont: {
     width: '100%',
