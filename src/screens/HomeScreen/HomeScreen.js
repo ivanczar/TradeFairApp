@@ -1,17 +1,7 @@
 import React from 'react';
-import {
-  Text,
-  Box,
-  FlatList,
-  Flex,
-  HStack,
-  Avatar,
-  VStack,
-  Spacer,
-  ScrollView,
-  Pressable,
-} from 'native-base';
+import { Text, Box, FlatList, Flex, ScrollView, Pressable } from 'native-base';
 import HomeTopBar from './components/HomeTopBar';
+import FairTopBar from '../FairScreens/components/FairTopBar';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import { data } from './components/data';
 import styles from './HomeScreenStyle';
@@ -41,7 +31,7 @@ const HomeScreen = ({ navigation }) => {
                     <ImageBackground
                       source={{ uri: item.avatarUrl }}
                       style={{ width: '100%', height: '100%' }}
-                      />
+                    />
                   </Flex>
                   <Flex style={styles.cardBodyCont}>
                     <Text style={styles.eventTitle}>{item.fullName}</Text>
@@ -50,7 +40,6 @@ const HomeScreen = ({ navigation }) => {
                   </Flex>
                 </Flex>
               </Pressable>
-             
             </ScrollView>
           )}
           keyExtractor={(item) => item.id}
