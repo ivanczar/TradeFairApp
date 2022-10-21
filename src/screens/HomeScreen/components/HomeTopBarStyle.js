@@ -5,18 +5,19 @@ import { theme } from '../../../styles/theme';
 export default StyleSheet.create({
   topBar: {
     backgroundColor: theme.colors.primary,
-    height: 80,
+    height: 70,
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    paddingTop: StatusBar.currentHeight,
+    paddingTop: StatusBar.currentHeight - 9,
   },
   profileIcon: {
-    fontSize: theme.textVariants.header.fontSize,
+    // fontSize: theme.textVariants.header.fontSize,
     marginLeft: 10,
     height: 35,
     width: 35,
     color: 'white',
+    marginTop: 5,
   },
   title: {
     fontSize: theme.textVariants.body.fontSize,
@@ -27,21 +28,27 @@ export default StyleSheet.create({
   },
   rightCont: {
     flexDirection: 'row',
-    paddingRight: 10,
+    flex: 0.9,
+    justifyContent: 'flex-end'
   },
   addIcon: {
-    fontSize: 30,
-    paddingLeft: 15,
+    fontSize: 27,
     color: 'white',
+    marginRight: 15,
   },
   walletIcon: {
-    fontSize: 30,
-    paddingLeft: 15,
+    fontSize: 27,
+    marginRight: 10,
     color: 'white',
   },
   input: {
-    maxWidth: 200,
-    height: 30,
+    maxWidth: '100%',
+    height: 35,
     backgroundColor: theme.colors.foreground,
+  },
+  inputCont: {
+    width: '70%',
+    marginLeft: 20,
+    flex: 2,
   },
 });

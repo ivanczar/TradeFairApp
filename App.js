@@ -7,7 +7,8 @@ import LoginScreen from './src/screens/LoginScreen/LoginScreen';
 import RegisterScreen from './src/screens/RegisterScreen/RegisterScreen';
 import LandingScreen from './src/screens/LandingScreen/LandingScreen';
 import CardholderScreen from './src/screens/CardholderScreen/CardholderScreen';
-import ProfileScreen from "./src/screens/ProfileScreen/ProfileScreen"
+import ProfileScreen from './src/screens/ProfileScreen/ProfileScreen';
+import FairHomeScreen from './src/screens/FairScreens/FairHomeScreen/FairHomeScreen';
 const Stack = createNativeStackNavigator();
 export default function App() {
   return (
@@ -39,9 +40,14 @@ export default function App() {
             component={CardholderScreen}
             options={{ headerShown: false }}
           />
-           <Stack.Screen
+          <Stack.Screen
             name='Profile'
             component={ProfileScreen}
+            options={{ headerShown: false }}
+          />
+          <Stack.Screen
+            name='FairHome'
+            component={FairHomeScreen}
             options={{ headerShown: false }}
           />
         </Stack.Navigator>

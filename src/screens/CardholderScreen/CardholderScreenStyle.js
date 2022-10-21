@@ -9,7 +9,7 @@ export default StyleSheet.create({
   },
   topBar: {
     backgroundColor: theme.colors.primary,
-    height: 80,
+    height: 70,
     width: '100%',
     justifyContent: 'space-between',
     flexDirection: 'row',
