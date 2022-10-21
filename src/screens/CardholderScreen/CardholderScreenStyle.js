@@ -13,6 +13,7 @@ export default StyleSheet.create({
     width: '100%',
     justifyContent: 'space-between',
     flexDirection: 'row',
+    alignItems: 'center',
     paddingTop: StatusBar.currentHeight,
     
   },
@@ -26,7 +27,9 @@ export default StyleSheet.create({
     color: 'white',
   },
   searchInput:{
-    backgroundColor: theme.colors.foreground
+    maxWidth: 200,
+    height: 30,
+    backgroundColor: theme.colors.background,
   },
   scrollCont: {
     width: '100%',

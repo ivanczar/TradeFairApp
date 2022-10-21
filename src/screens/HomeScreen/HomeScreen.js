@@ -19,7 +19,7 @@ import { ImageBackground } from 'react-native';
 const HomeScreen = ({navigation}) => {
   return (
     <Box style={styles.cont}>
-      <HomeTopBar />
+      <HomeTopBar navigation={navigation} />
       <Box>
         <FlatList
           data={data}

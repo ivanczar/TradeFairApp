@@ -7,7 +7,7 @@ import styles from './CardholderScreenStyle';
 import Card from './components/Card';
 import { getUsers } from '../../common/components/getUsers';
 import { StatusBar } from 'react-native';
-const CardholderScreen = () => {
+const CardholderScreen = ({navigation}) => {
   const [user, setUser] = useState({});
 
   //   useEffect(() => {
@@ -45,16 +45,16 @@ const CardholderScreen = () => {
   };
   return (
     <Box style={styles.cont}>
-      <StatusBar hidden />
+      {/* <StatusBar hidden /> */}
       <Flex style={styles.topBar}>
         <Pressable
           onPress={() => {
-            test();
+            navigation.goBack();
           }}
         >
           <Ionicons style={styles.backIcon} name='chevron-back'></Ionicons>
         </Pressable>
-        <Input w={250} h={10} placeholder={'Search'} style={styles.searchInput}></Input>
+        <Input  placeholder={'Search'} style={styles.searchInput}></Input>
         <Pressable
           onPress={() => {
             console.log('qr pressed');

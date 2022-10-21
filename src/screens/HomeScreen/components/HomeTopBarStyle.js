@@ -6,10 +6,10 @@ export default StyleSheet.create({
   topBar: {
     backgroundColor: theme.colors.primary,
     height: 80,
-    paddingTop: StatusBar.currentHeight,
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
+    paddingTop: StatusBar.currentHeight,
   },
   profileIcon: {
     fontSize: theme.textVariants.header.fontSize,
@@ -43,6 +43,5 @@ export default StyleSheet.create({
     maxWidth: 200,
     height: 30,
     backgroundColor: theme.colors.background,
-    
   },
 });

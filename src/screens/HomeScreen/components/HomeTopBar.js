@@ -2,7 +2,7 @@ import React from 'react';
 import { Flex, Link, Input, Avatar } from 'native-base';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import styles from './HomeTopBarStyle';
-const HomeTopBar = () => {
+const HomeTopBar = ({navigation}) => {
   const imgURL =
     'https://www.medifab.co.nz/sites/default/files/Frederick%20Mascull_0.png';
   return (
@@ -31,10 +31,10 @@ const HomeTopBar = () => {
         </Link>
         <Link
           onPress={() => {
-            console.log('wallet pressed');
+            navigation.navigate("Cardholder");
           }}
         >
-          {/* <Ionicons style={styles.walletIcon} name='wallet'></Ionicons> */}
+          <Ionicons style={styles.walletIcon} name='wallet'></Ionicons>
         </Link>
       </Flex>
     </Flex>
