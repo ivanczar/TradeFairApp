@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { NativeBaseProvider } from 'native-base';
 import { NavigationContainer } from '@react-navigation/native';
@@ -35,5 +36,6 @@ export default function App() {
         </Stack.Navigator>
       </NativeBaseProvider>
     </NavigationContainer>
+
   );
 }

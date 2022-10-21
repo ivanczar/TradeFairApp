@@ -9,6 +9,7 @@ const palette = {
   //f3f2ef
 };
 
+
 export const theme = {
   colors: {
     background: palette.grey,
@@ -29,6 +30,7 @@ export const theme = {
     header: {
       fontSize: 40,
       fontWeight: 'bold',
+
     },
     body: {
       fontFamily: 'Merriweather',
