@@ -1,5 +1,13 @@
 import React from 'react';
-import { Box, FlatList, Flex, ScrollView, Pressable, Input } from 'native-base';
+import {
+  Box,
+  FlatList,
+  Flex,
+  ScrollView,
+  Pressable,
+  Input,
+  Skeleton,
+} from 'native-base';
 import { useState, useEffect } from 'react';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import styles from './CardholderScreenStyle';
@@ -21,7 +29,7 @@ const CardholderScreen = ({ navigation }) => {
     };
     getUsers();
   }, []);
-  
+
   return (
     <Box style={styles.cont}>
       <Flex style={styles.topBar}>
@@ -44,21 +52,21 @@ const CardholderScreen = ({ navigation }) => {
 
       {users && console.log(users)}
       <Box>
-        {users &&
+        {users && (
           <FlatList
             data={users}
             renderItem={({ item }) => (
               <ScrollView style={styles.scrollCont}>
                 <Card
-                    name={item.name.first + " " + item.name.last}
-                    phone={item.cell}
-                    avatar={item.picture.large} //This isnt being passed
-                  />
+                  name={item.name.first + ' ' + item.name.last}
+                  phone={item.cell}
+                  avatar={item.picture.large} //This isnt being passed
+                />
               </ScrollView>
             )}
             keyExtractor={(item) => item.cell}
           />
-        }
+        )}
       </Box>
     </Box>
   );

@@ -1,7 +1,7 @@
 export const data = [
   {
     id: 'bd7acbea-c1b1-46c2-aed5-3ad53abb28ba',
-    fullName: 'Wolkswagen Fair',
+    fullName: 'Food Fair',
     fairDate: '12/12/2223',
     avatarUrl:
       'https://wishfulchef.com/wp-content/uploads/2012/04/PadThai.jpg',
@@ -15,7 +15,7 @@ export const data = [
   },
   {
     id: '58694a0f-3da1-471f-bd96-14551e29d72',
-    fullName: 'Healthy Food Fair',
+    fullName: 'Gut Health Fair',
     fairDate: '12/12/2422',
     avatarUrl:
       'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80',

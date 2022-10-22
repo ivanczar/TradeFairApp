@@ -3,7 +3,7 @@ import { Text, Box, FlatList, Flex, ScrollView, Pressable } from 'native-base';
 // import HomeTopBar from './components/HomeTopBar';
 import FairTopBar from '../components/FairTopBar';
 import Ionicons from 'react-native-vector-icons/Ionicons';
-import { data } from '../../HomeScreen/components/data';
+import { data } from '../components/timetableData'
 import styles from './FairTimetableScreenStyle';
 import { ImageBackground } from 'react-native';
 const FairTimetableScreen = ({ navigation }) => {
