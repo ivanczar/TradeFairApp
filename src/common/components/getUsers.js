@@ -10,7 +10,7 @@ export const getUsers = async () => {
       'https://randomuser.me/api/?inc=picture,name,email,cell'
     );
     let responseJson = await response.json();
-    object.picture = responseJson.results[0].picture.medium;
+    object.picture = responseJson.results[0].picture.large;
     object.name = responseJson.results[0].name.first;
     object.email = responseJson.results[0].email;
     object.phone = responseJson.results[0].picture.cell;

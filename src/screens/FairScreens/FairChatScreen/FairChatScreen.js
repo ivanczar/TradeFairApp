@@ -1,24 +1,17 @@
 import React from 'react';
-import {
-  Text,
-  Box,
-  FlatList,
-  Flex,
-  ScrollView,
-  Pressable,
-  HStack,
-} from 'native-base';
+import { Text, Box, FlatList, Flex, ScrollView, Pressable } from 'native-base';
+// import HomeTopBar from './components/HomeTopBar';
 import FairTopBar from '../components/FairTopBar';
-import { data } from '../../CardholderScreen/components/data';
-import styles from './FairHomeScreenStyle';
+import Ionicons from 'react-native-vector-icons/Ionicons';
+import { data } from '../../HomeScreen/components/data';
+import styles from './FairChatScreenStyle';
 import { ImageBackground } from 'react-native';
-const FairHomeScreen = ({ navigation }) => {
+const FairChatScreen = ({ navigation }) => {
   return (
     <Box style={styles.cont}>
       <FairTopBar navigation={navigation} />
-      <Box style={styles.listCont}>
+      <Box>
         <FlatList
-          numColumns={2}
           data={data}
           renderItem={({ item }) => (
             <ScrollView style={styles.scrollCont}>
@@ -42,7 +35,7 @@ const FairHomeScreen = ({ navigation }) => {
                   </Flex>
                   <Flex style={styles.cardBodyCont}>
                     <Text style={styles.eventTitle}>{item.fullName}</Text>
-                    <Text style={styles.dateTitle}>{item.cell}</Text>
+                    <Text style={styles.dateTitle}>{item.fairDate}</Text>
                     {/* <Ionicons style={styles.enterIcon} name='chevron-forward'></Ionicons> */}
                   </Flex>
                 </Flex>
@@ -56,4 +49,4 @@ const FairHomeScreen = ({ navigation }) => {
   );
 };
 
-export default FairHomeScreen;
+export default FairChatScreen;

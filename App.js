@@ -2,6 +2,7 @@ import React from 'react';
 import { NativeBaseProvider } from 'native-base';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import Navbar from './src/screens/FairScreens/components/Navbar';
 import HomeScreen from './src/screens/HomeScreen/HomeScreen';
 import LoginScreen from './src/screens/LoginScreen/LoginScreen';
 import RegisterScreen from './src/screens/RegisterScreen/RegisterScreen';
@@ -47,10 +48,11 @@ export default function App() {
           />
           <Stack.Screen
             name='FairHome'
-            component={FairHomeScreen}
+            component={Navbar}
             options={{ headerShown: false }}
           />
         </Stack.Navigator>
+      
       </NativeBaseProvider>
     </NavigationContainer>
   );

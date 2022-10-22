@@ -24,7 +24,7 @@ const FairTopBar = ({ navigation }) => {
         >
           <Ionicons
             style={styles.homeIcon}
-            size={30}
+            size={25}
             name='home-outline'
           ></Ionicons>
         </Pressable>
@@ -63,7 +63,7 @@ const styles = StyleSheet.create({
     fontSize: 20,
     color: 'white',
     marginLeft: 20,
-    fontWeight: 'bold'
+    fontWeight: 'bold',
   },
 });
 
