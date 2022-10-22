@@ -1,15 +1,15 @@
 import React from 'react';
 import { Text, Box, FlatList, Flex, ScrollView, Pressable } from 'native-base';
-import HomeTopBar from './components/HomeTopBar';
-import FairTopBar from '../FairScreens/components/FairTopBar';
+// import HomeTopBar from './components/HomeTopBar';
+import FairTopBar from '../components/FairTopBar';
 import Ionicons from 'react-native-vector-icons/Ionicons';
-import { data } from './components/data';
-import styles from './HomeScreenStyle';
+import { data } from '../components/timetableData'
+import styles from './FairTimetableScreenStyle';
 import { ImageBackground } from 'react-native';
-const HomeScreen = ({ navigation }) => {
+const FairTimetableScreen = ({ navigation }) => {
   return (
     <Box style={styles.cont}>
-      <HomeTopBar navigation={navigation} />
+      <FairTopBar title={"Food Fair"} navigation={navigation} />
       <Box>
         <FlatList
           data={data}
@@ -49,4 +49,4 @@ const HomeScreen = ({ navigation }) => {
   );
 };
 
-export default HomeScreen;
+export default FairTimetableScreen;

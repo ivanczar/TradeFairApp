@@ -9,7 +9,7 @@ export default StyleSheet.create({
   },
   topBar: {
     backgroundColor: theme.colors.primary,
-    height: 80,
+    height: 70,
     width: '100%',
     justifyContent: 'space-between',
     flexDirection: 'row',
@@ -27,9 +27,10 @@ export default StyleSheet.create({
     color: 'white',
   },
   searchInput:{
-    maxWidth: 200,
-    height: 30,
+    maxWidth: 250,
+    height: 35,
     backgroundColor: theme.colors.foreground,
+    marginBottom: 5,
   },
   scrollCont: {
     width: '100%',

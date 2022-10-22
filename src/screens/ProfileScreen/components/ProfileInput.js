@@ -5,6 +5,7 @@ import { theme } from '../../../styles/theme';
 const ProfileInput = (props) => {
   return (
     <Input
+    variant={'underlined'}
     backgroundColor={theme.colors.foreground}
       placeholder={props.placeholder}
       value={props.value}

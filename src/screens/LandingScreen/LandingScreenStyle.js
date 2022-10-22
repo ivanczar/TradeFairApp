@@ -15,18 +15,21 @@ export default StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     flex: 1,
+
   },
   title: {
     color: theme.colors.foreground,
     fontWeight: theme.textVariants.header.fontWeight,
     fontSize: theme.textVariants.header.fontSize,
     lineHeight: theme.textVariants.header.fontSize,
+    marginTop: 20,
   },
   buttonCont: {
     width: '100%',
     alignItems: 'center',
     justifyContent: 'center',
     flex: 1,
+
   },
   loginButton: {
     width: 290,
@@ -42,5 +45,6 @@ export default StyleSheet.create({
     borderColor: theme.colors.foreground,
     borderWidth: 1,
     marginTop: 10,
+    marginBottom: 100
   },
 });
