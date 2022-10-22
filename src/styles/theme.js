@@ -9,7 +9,6 @@ const palette = {
   //f3f2ef
 };
 
-
 export const theme = {
   colors: {
     background: palette.grey,

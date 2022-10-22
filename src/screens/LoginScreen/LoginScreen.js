@@ -1,14 +1,13 @@
 import React from 'react';
 import { Text, Button, Flex, Input, Divider, Link, Image } from 'native-base';
 import styles from './LoginScreenStyle';
-import Logo from "../../assets/images/logo.png"
+import Logo from '../../assets/images/logo.png';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 const LoginScreen = ({ navigation }) => {
   return (
     <Flex style={styles.cont}>
       <Flex style={styles.titleCont}>
         <Image h={200} w={200} source={Logo} alt='logo'></Image>
-        {/* <Text style={styles.title}>Trade Fair App</Text> */}
       </Flex>
       <Flex style={styles.inputCont}>
         <Input placeholder='Username or email' style={styles.input}></Input>

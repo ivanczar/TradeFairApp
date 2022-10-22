@@ -17,7 +17,6 @@ export default StyleSheet.create({
     height: 200,
     paddingLeft: 0,
     backgroundColor: theme.colors.foreground,
-    // paddingVertical: 10,
   },
   cardImageCont: {
     width: '100%',

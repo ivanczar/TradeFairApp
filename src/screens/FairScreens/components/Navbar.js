@@ -1,5 +1,4 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { Flex, Text } from 'native-base';
 import FairHomeScreen from '../FairHomeScreen/FairHomeScreen';
 import FairTimetableScreen from '../FairTimetableScreen/FairTimetableScreen';
 import FairChatScreen from '../FairChatScreen/FairChatScreen';

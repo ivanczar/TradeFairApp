@@ -1,14 +1,5 @@
 import React from 'react';
-import {
-  Text,
-  Button,
-  Flex,
-  Input,
-  Divider,
-  Link,
-  Avatar,
-  Pressable,
-} from 'native-base';
+import { Text, Flex, Pressable } from 'native-base';
 import { theme } from '../../../styles/theme';
 import { StyleSheet } from 'react-native';
 import Ionicons from 'react-native-vector-icons/Ionicons';

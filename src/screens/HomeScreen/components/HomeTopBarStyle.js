@@ -12,7 +12,6 @@ export default StyleSheet.create({
     paddingTop: StatusBar.currentHeight - 9,
   },
   profileIcon: {
-    // fontSize: theme.textVariants.header.fontSize,
     marginLeft: 10,
     height: 35,
     width: 35,

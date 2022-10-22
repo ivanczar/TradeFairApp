@@ -8,9 +8,9 @@ export default StyleSheet.create({
   scrollCont: {
     width: '100%',
     height: 220,
-    marginRight: 20
+    marginRight: 20,
   },
-  
+
   cardCont: {
     width: '90%',
     marginLeft: 20,
