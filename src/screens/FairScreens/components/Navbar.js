@@ -32,7 +32,7 @@ const Navbar = () => {
               style={{
                 justifyContent: 'center',
                 alignItems: 'center',
-                marginTop: 20,
+                marginTop: 30,
                 height: '170%',
               }}
             />
@@ -42,14 +42,8 @@ const Navbar = () => {
         tabBarInactiveTintColor: 'black',
         headerShown: false,
         tabBarStyle: {
-          position: 'absolute',
-          bottom: 10,
-          left: 10,
           backgroundColor: 'white',
-          right: 10,
-          borderRadius: 5,
-          height: 45,
-          elevation: 0,
+          height: 50,
         },
       })}
     >

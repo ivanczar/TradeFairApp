@@ -42,7 +42,7 @@ export default StyleSheet.create({
   },
   input: {
     maxWidth: '100%',
-    height: 35,
+    height: 30,
     backgroundColor: theme.colors.foreground,
   },
   inputCont: {
