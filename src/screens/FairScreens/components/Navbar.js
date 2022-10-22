@@ -11,52 +11,70 @@ const Tab = createBottomTabNavigator();
 const Navbar = () => {
   return (
     <Tab.Navigator
-      tabBarOptions={{ showLabel: false }}
-      screenOptions={{
-        // tabBarStyle: { backgroundColor: theme.colors.primary },
-      }}
+      initialRouteName={FairHomeScreen}
+      screenOptions={({ route }) => ({
+        tabBarIcon: ({ focused, color, size }) => {
+          let iconName;
+          let routeName = route.name;
+
+          if (routeName === 'Attendees') {
+            iconName = focused ? 'people' : 'people-outline';
+          } else if (routeName === 'Timetable') {
+            iconName = focused ? 'time' : 'time-outline';
+          } else if (routeName === 'Chat') {
+            iconName = focused ? 'chatbubble' : 'chatbubble-outline';
+          }
+
+          return (
+            <Ionicons
+              name={iconName}
+              size={25}
+              color={color}
+              style={{
+                justifyContent: 'center',
+                alignItems: 'center',
+                marginTop: 20,
+                height: '170%',
+              }}
+            />
+          );
+        },
+        tabBarActiveTintColor: theme.colors.primary,
+        tabBarInactiveTintColor: 'black',
+        headerShown: false,
+        tabBarStyle: {
+          position: 'absolute',
+          bottom: 10,
+          left: 10,
+          backgroundColor: 'white',
+          right: 10,
+          borderRadius: 5,
+          height: 45,
+          elevation: 0,
+        },
+      })}
     >
       <Tab.Screen
         options={{
           headerShown: false,
-          tabBarIcon: ({ focused }) => (
-            <Flex style={{ alignItems: 'center', justifyContent: 'center' }}>
-              <Ionicons size={30} name='people-outline' />
-              <Text>Attendees</Text>
-            </Flex>
-          ),
         }}
-        name='FairHome'
+        name='Attendees'
         component={FairHomeScreen}
       />
       <Tab.Screen
         options={{
           headerShown: false,
-          tabBarIcon: ({ focused }) => (
-            <Flex style={{ alignItems: 'center', justifyContent: 'center' }}>
-              <Ionicons size={30} name='time-outline' />
-              <Text>Timetable</Text>
-            </Flex>
-          ),
         }}
-        name='FairTimetable'
+        name='Timetable'
         component={FairTimetableScreen}
       />
       <Tab.Screen
         options={{
           headerShown: false,
-          tabBarIcon: ({ focused }) => (
-            <Flex style={{ alignItems: 'center', justifyContent: 'center' }}>
-              <Ionicons size={30} name='chatbubble-outline' />
-              <Text>Chat</Text>
-            </Flex>
-          ),
         }}
-        name='FairChat'
+        name='Chat'
         component={FairChatScreen}
       />
-      {/* <Tab.Screen name='FairHome' component={FairHomeScreen}/> */}
-      {/* <Tab.Screen name='FairHome' component={FairHomeScreen}/> */}
     </Tab.Navigator>
   );
 };

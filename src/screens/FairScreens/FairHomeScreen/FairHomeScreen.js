@@ -15,7 +15,7 @@ import { ImageBackground } from 'react-native';
 const FairHomeScreen = ({ navigation }) => {
   return (
     <Box style={styles.cont}>
-      <FairTopBar navigation={navigation} />
+      <FairTopBar title={"Food Fair"} navigation={navigation} />
       <Box style={styles.listCont}>
         <FlatList
           numColumns={2}

@@ -13,13 +13,13 @@ import { theme } from '../../../styles/theme';
 import { StyleSheet } from 'react-native';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import { StatusBar } from 'react-native';
-const FairTopBar = ({ navigation }) => {
+const FairTopBar = ({ navigation, title }) => {
   return (
     <Flex style={styles.navCont}>
       <Flex style={styles.homeCont}>
         <Pressable
           onPress={() => {
-            navigation.goBack();
+            navigation.navigate('Home');
           }}
         >
           <Ionicons
@@ -28,7 +28,7 @@ const FairTopBar = ({ navigation }) => {
             name='home-outline'
           ></Ionicons>
         </Pressable>
-        <Text style={styles.fairTitle}>Food Fair</Text>
+        <Text style={styles.fairTitle}>{title}</Text>
       </Flex>
     </Flex>
   );
@@ -59,7 +59,6 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
   },
   fairTitle: {
-    // fontWeight: theme.textVariants.header.fontWeight,
     fontSize: 20,
     color: 'white',
     marginLeft: 20,

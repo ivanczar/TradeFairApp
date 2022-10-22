@@ -20,7 +20,6 @@ const HomeTopBar = ({ navigation }) => {
           style={styles.profileIcon}
         ></Avatar>
       </Link>
-      {/* <Text style={styles.title}>Home</Text> */}
       <Flex style={styles.inputCont}>
 
       <Input placeholder={'Search'} style={styles.input}></Input>
@@ -39,6 +38,7 @@ const HomeTopBar = ({ navigation }) => {
           }}
         >
           <Ionicons style={styles.walletIcon} name='wallet-outline'></Ionicons>
+
         </Link>
       </Flex>
     </Flex>

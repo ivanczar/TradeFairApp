@@ -9,7 +9,7 @@ import { ImageBackground } from 'react-native';
 const FairTimetableScreen = ({ navigation }) => {
   return (
     <Box style={styles.cont}>
-      <FairTopBar navigation={navigation} />
+      <FairTopBar title={"Food Fair"} navigation={navigation} />
       <Box>
         <FlatList
           data={data}

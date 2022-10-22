@@ -14,7 +14,7 @@ export default StyleSheet.create({
   cardCont: {
     width: '90%',
     marginLeft: 20,
-    borderRadius: 10,
+    borderRadius: 5,
     marginTop: 10,
     height: 200,
     paddingLeft: 0,
