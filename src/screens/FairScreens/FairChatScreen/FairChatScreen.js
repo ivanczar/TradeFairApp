@@ -8,8 +8,15 @@ const FairChatScreen = ({ navigation }) => {
     <Box style={styles.cont}>
       <FairTopBar title={'Food Fair'} navigation={navigation} />
       <Box>
-        <Text style={{ alignSelf: 'center', marginTop: 120 }}>
-          No messages to show
+        <Text
+          style={{
+            alignSelf: 'center',
+            marginTop: 120,
+            fontSize: 15,
+            fontWeight: 'bold',
+          }}
+        >
+          No new messages, please come back later.
         </Text>
         <FlatList
           data={data}
