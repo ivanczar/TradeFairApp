@@ -12,7 +12,6 @@ export default StyleSheet.create({
     paddingTop: StatusBar.currentHeight - 9,
   },
   profileIcon: {
-    // fontSize: theme.textVariants.header.fontSize,
     marginLeft: 10,
     height: 35,
     width: 35,
@@ -43,7 +42,7 @@ export default StyleSheet.create({
   },
   input: {
     maxWidth: '100%',
-    height: 35,
+    height: 30,
     backgroundColor: theme.colors.foreground,
   },
   inputCont: {

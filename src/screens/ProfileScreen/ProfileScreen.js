@@ -9,12 +9,10 @@ import {
   Alert,
   VStack,
   HStack,
-  IconButton,
 } from 'native-base';
 import Ionicons from 'react-native-vector-icons/AntDesign';
 import styles from './ProfileScreenStyle';
 import ProfileInput from './components/ProfileInput';
-import { theme } from '../../styles/theme';
 
 const ProfileScreen = ({ navigation }) => {
   const imgURL =

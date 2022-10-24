@@ -1,13 +1,5 @@
 import React from 'react';
-import {
-  Box,
-  FlatList,
-  Flex,
-  ScrollView,
-  Pressable,
-  Input,
-  Skeleton,
-} from 'native-base';
+import { Box, FlatList, Flex, ScrollView, Pressable, Input } from 'native-base';
 import { useState, useEffect } from 'react';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import styles from './CardholderScreenStyle';
@@ -50,7 +42,6 @@ const CardholderScreen = ({ navigation }) => {
         </Pressable>
       </Flex>
 
-      {users && console.log(users)}
       <Box>
         {users && (
           <FlatList
@@ -60,7 +51,7 @@ const CardholderScreen = ({ navigation }) => {
                 <Card
                   name={item.name.first + ' ' + item.name.last}
                   phone={item.cell}
-                  avatar={item.picture.large} //This isnt being passed
+                  avatar={item.picture.large}
                 />
               </ScrollView>
             )}

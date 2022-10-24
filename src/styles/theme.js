@@ -1,14 +1,12 @@
 const palette = {
   blue: '#1f6feb',
-  green: '#0ECD9D',
-  red: '#CD0E61',
+  green: '#36B37E',
+  red: '#CC3333',
   black: '#0B0B0B',
   white: '#F0F2F3',
   grey: '#E0E0E0',
   darkGrey: '#696969',
-  //f3f2ef
 };
-
 
 export const theme = {
   colors: {
@@ -30,7 +28,6 @@ export const theme = {
     header: {
       fontSize: 40,
       fontWeight: 'bold',
-
     },
     body: {
       fontFamily: 'Merriweather',

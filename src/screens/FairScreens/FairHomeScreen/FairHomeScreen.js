@@ -1,16 +1,7 @@
 import React from 'react';
-import {
-  Text,
-  Box,
-  FlatList,
-  Flex,
-  ScrollView,
-  Pressable,
-  HStack,
-} from 'native-base';
+import { Text, Box, FlatList, Flex, ScrollView, Pressable } from 'native-base';
 import { useState, useEffect } from 'react';
 import FairTopBar from '../components/FairTopBar';
-import { data } from '../../CardholderScreen/components/data';
 import styles from './FairHomeScreenStyle';
 import { ImageBackground } from 'react-native';
 const FairHomeScreen = ({ navigation }) => {
@@ -46,12 +37,6 @@ const FairHomeScreen = ({ navigation }) => {
               >
                 <Flex style={styles.cardCont}>
                   <Flex style={styles.cardImageCont}>
-                    {/* <ImageBackground
-                      source={{
-                        uri: "https://reactjs.org/logo-og.png"
-                      }}
-                      resizeMode="cover"
-                    /> */}
                     <ImageBackground
                       source={{ uri: item.picture.large }}
                       style={{ width: '100%', height: '100%' }}
@@ -61,8 +46,6 @@ const FairHomeScreen = ({ navigation }) => {
                     <Text style={styles.eventTitle}>
                       {item.name.first + ' ' + item.name.last}
                     </Text>
-                    {/* <Text style={styles.dateTitle}>{item.cell}</Text> */}
-                    {/* <Ionicons style={styles.enterIcon} name='chevron-forward'></Ionicons> */}
                   </Flex>
                 </Flex>
               </Pressable>
