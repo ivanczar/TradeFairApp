@@ -1,13 +1,13 @@
 import React from 'react';
-import { Text, Button, Flex, Input, Divider, Link } from 'native-base';
+import { Text, Button, Flex, Input, Divider, Link, Image } from 'native-base';
 import styles from './RegisterScreenStyle';
-
+import Logo from '../../assets/images/logo.png';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 const RegisterScreen = ({ navigation }) => {
   return (
     <Flex style={styles.cont}>
       <Flex style={styles.titleCont}>
-        <Text style={styles.title}>Trade Fair App</Text>
+      <Image h={200} w={200} source={Logo} alt='logo'></Image>
       </Flex>
       <Flex style={styles.inputCont}>
         <Input placeholder='Full Name' style={styles.input}></Input>
