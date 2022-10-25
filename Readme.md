@@ -10,20 +10,20 @@ This application was built with React Native and Javascript as this allows for a
 - (In the case that dependencies are missing from the project upon build, type ```npm ci``` to perform a clean installation of dependencies).
 
 ## Dependencies:
-"@react-navigation/bottom-tabs": "^6.4.0",
-    "@react-navigation/native": "^6.0.13",
-    "@react-navigation/native-stack": "^6.9.1",
-    "expo": "^44.0.0",
-    "expo-status-bar": "~1.2.0",
-    "native-base": "3.4.0",
-    "react": "17.0.1",
-    "react-dom": "17.0.1",
-    "react-native": "0.64.3",
-    "react-native-safe-area-context": "3.3.2",
-    "react-native-screens": "~3.10.1",
-    "react-native-svg": "12.1.1",
-    "react-native-vector-icons": "^9.2.0",
-    "react-native-web": "0.17.1"
+    "@react-navigation/bottom-tabs": "^6.4.0",  
+    "@react-navigation/native": "^6.0.13",  
+    "@react-navigation/native-stack": "^6.9.1",  
+    "expo": "^44.0.0",  
+    "expo-status-bar": "~1.2.0",  
+    "native-base": "3.4.0",  
+    "react": "17.0.1",  
+    "react-dom": "17.0.1",  
+    "react-native": "0.64.3",  
+    "react-native-safe-area-context": "3.3.2",  
+    "react-native-screens": "~3.10.1",  
+    "react-native-svg": "12.1.1",  
+    "react-native-vector-icons": "^9.2.0",  
+    "react-native-web": "0.17.1"  
 
 
 ## Example Usage:
