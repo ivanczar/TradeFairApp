@@ -27,8 +27,10 @@ This application was built with React Native and Javascript as this allows for a
 
 
 ## Example Usage:
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/65811518/197897999-ed2afe68-fdba-4a06-a20e-7fbfa8976f55.gif)
 
-https://user-images.githubusercontent.com/65811518/197897722-458c0139-cbea-4e39-b627-09d032fec8ab.mp4
+
+
 
 
 ## Authors and Credits
