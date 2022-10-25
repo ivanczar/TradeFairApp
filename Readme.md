@@ -27,15 +27,12 @@ This application was built with React Native and Javascript as this allows for a
 
 
 ## Example Usage:
-![ezgif com-gif-maker](https://user-images.githubusercontent.com/65811518/197897999-ed2afe68-fdba-4a06-a20e-7fbfa8976f55.gif)
-
-
-
+![ezgif com-gif-maker(1)](https://user-images.githubusercontent.com/65811518/197898433-caa5e19c-3259-4702-a8ae-92a4e345bff4.gif)
 
 
 ## Authors and Credits
-Ivan Czar
-Thank you to Jorge and Lucas, who through constant feedback, allowed me to refine the design of this app
+Ivan Czar.  
+A special thank you to Jorge and Lucas, who through constant feedback, allowed me to refine the design of this app.
 
 
 
