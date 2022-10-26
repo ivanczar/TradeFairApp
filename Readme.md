@@ -32,7 +32,7 @@ This application was built with React Native and Javascript as this allows for a
 
 ## Authors and Credits
 Ivan Czar.  
-A special thank you to Jorge and Lucas, who through constant feedback, allowed me to refine the design of this app.
+A special thank you to Jorge and Lucas who, through constant feedback, allowed me to refine the design of this app.
 
 
 
