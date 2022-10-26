@@ -1,6 +1,6 @@
 # Trade Fair App
-The Trade Fair App aims to provide users with all the relevant information they need to make the most of their time at fairs. Once logged in, users can add fairs they will be attending and view them all in one place. Users of this app can then access these fairs to view its attendees, timetable, and chat with other eventgoers. Finally, the user has the ability to view and edit their profile information and collect business cards to later view them in a cardholder.
-This application was built with React Native and Javascript as this allows for a cross-platform app to be written in a single codebase within the time constraints of this project. 
+The Trade Fair App aims to provide users with all the relevant information they need to make the most out of their time at fairs. Once logged in, users can add and view fairs they will be attending in the home screen. Users of this app can then access these fairs to view its attendees, timetable, and chat with other eventgoers. Finally, the user has the ability to view and edit their profile information and collect business cards and view them in a cardholder.
+This application was built with React Native and Javascript as this allows for a cross-platform app to be written with a single codebase within the time constraints of this project. 
 
 ## How to build the project:
 
