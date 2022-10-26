@@ -30,7 +30,7 @@ This application was built with React Native and Javascript as this allows for a
 ![ezgif com-gif-maker(1)](https://user-images.githubusercontent.com/65811518/197898433-caa5e19c-3259-4702-a8ae-92a4e345bff4.gif)
 
 
-## Authors and Credits
+## Authors and Acknowledgements
 Ivan Czar.  
 A special thank you to Jorge and Lucas who, through constant feedback, allowed me to refine the design of this app.
 
