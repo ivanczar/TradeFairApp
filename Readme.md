@@ -3,7 +3,7 @@ The Trade Fair App aims to provide users with all the relevant information they 
 This application was built with React Native and Javascript as this allows for a cross-platform app to be written with a single codebase within the time constraints of this project. 
 
 ## Cloning the repository:
-To clone this repository to your local machine, navigate to your preffered directory and run the following command:
+To clone this repository to your local machine, navigate to your preffered directory and run the following command:  
 ```git clone https://github.com/ivanczar/Trade_Fair_App.git```
 
 ## How to build the project:
@@ -34,7 +34,7 @@ To clone this repository to your local machine, navigate to your preffered direc
 ![ezgif com-gif-maker(1)](https://user-images.githubusercontent.com/65811518/197898433-caa5e19c-3259-4702-a8ae-92a4e345bff4.gif)
 
 
-## Authors and Acknowledgements
+## Author and Acknowledgements
 Ivan Czar.  
 A special thank you to Jorge and Lucas who, through constant feedback, allowed me to refine the design of this app.
 
