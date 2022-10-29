@@ -2,10 +2,14 @@
 The Trade Fair App aims to provide users with all the relevant information they need to make the most out of their time at fairs. Once logged in, on the home screen users can add and view the fairs that they will be attending. Users of this app can then access these fairs to view their attendees, timetable, and chat with other eventgoers. Finally, the user has the ability to view and edit their profile information and collect business cards and view them in a cardholder.
 This application was built with React Native and Javascript as this allows for a cross-platform app to be written with a single codebase within the time constraints of this project. 
 
+## Cloning the repository:
+To clone this repository to your local machine, navigate to your preffered directory and run the following command:
+```git clone https://github.com/ivanczar/Trade_Fair_App.git```
+
 ## How to build the project:
 
 - Download the "Expo Go" app from the app store, available both on Android Google Play Store and the IOS App store.
-- Type ```expo start``` into the terminal to build the project. This will open metro bundler and will provide a QR code to scan using either the camera app (IOS) or the Expo Go app (Android).
+- Please ensure that your device and computer are on the same network. Then, type ```expo start``` into the terminal to build the project. This will open metro bundler and will provide a QR code to scan using either the camera app (IOS) or the Expo Go app (Android).
 - You may also use any device emulator of your choice (such as those available through Android Studio or Xcode) if you do not wish to download the Expo Go app.
 - (In the case that dependencies are missing from the project upon build, type ```npm ci``` to perform a clean installation of dependencies).
 
